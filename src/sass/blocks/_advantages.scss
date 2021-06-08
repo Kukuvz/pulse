@@ -3,12 +3,6 @@
     padding: 70px 0 64px 0;
     background-color: #F6F6F6;
     text-align: center;
-    &__header {
-        margin: 0;
-        font-weight: 700;
-        font-size: 30px;
-        color: #0D0D0D;
-    }
     &__items {
         display: flex;
         justify-content: space-between;
@@ -21,22 +15,22 @@
             height: 70px;
             margin-bottom: 35px;
         }
-        &-header {
-            margin-bottom: 20px;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 29px;
-            color: #0D0D0D;
-        }
-        &-descr {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            color: #0D0D0D;
-            span {
-                font-family: 'Museo Moderno', sans-serif;
-                color: $main-color;
-            }
+    }
+    &__subheader {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+        color: #0D0D0D;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #0D0D0D;
+        a {
+            font-family: 'Museo Moderno', sans-serif;
+            color: $main-color;
         }
     }
 }
