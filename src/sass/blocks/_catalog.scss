@@ -54,6 +54,10 @@
         padding: 20px 18px 20px 23px;
         overflow: hidden;
         margin-bottom: 19px;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+        }
         &__img {
             display: block;
             margin: 0 auto;
