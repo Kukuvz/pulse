@@ -128,34 +128,34 @@
                 margin-right: 20px;
             }
         }
-        &__list {
-            position: relative;
+        &__block {
             width: 50%;
-            margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 10px;
             margin-bottom: 0;
-            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
-                margin-left: 0;
+                margin-right: 0px;
             }
-            li {
-                position: relative;
-                margin-bottom: 20px;
-                font-weight: 300;
-                font-size: 14px;
-                color: #555555;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -14px;
-                    top: 7px;
+            &-list {
+                list-style-type: none;
+                padding-inline-start: 35px;
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-bottom: 4px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -14px;
+                        top: 7px;
+                    }
                 }
             }
         }
@@ -163,15 +163,15 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% -10px));
+            transform: translateX(calc(-50% - 19px));
             display: block;
             color: $main-color;
-            font-weight: 500;
             font-size: 14px;
-            text-transform: uppercase;
+            font-weight: 500;
             text-decoration: underline;
+            text-transform: uppercase;
             &:hover {
-                color: $main-color;
+                color:$main-color
             }
         }
     }
